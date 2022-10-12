@@ -4,25 +4,43 @@ import { usersData } from "./user_data";
 export default function App() {
   return (
     <div>
-      <User
-        imageUrl={usersData[0].avatar}
-        name={usersData[0].username}
-        tag={usersData[0].tag}
-        location={usersData[0].location}
-        followers={usersData[0].stats.followers}
-        views={usersData[0].stats.views}
-        likes={usersData[0].stats.likes}
+      {usersData.map(user => (
+        <User
+        key={user.tag}
+        imageUrl={user.avatar}
+        name={user.username}
+        tag={user.tag}
+        location={user.location}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
       />
-      
-      <User
-        imageUrl={usersData[1].avatar}
-        name={usersData[1].username}
-        tag={usersData[1].tag}
-        location={usersData[1].location}
-        followers={usersData[1].stats.followers}
-        views={usersData[1].stats.views}
-        likes={usersData[1].stats.likes}
-      />
+      ))}
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// использование логического И и тернарника
+// const isOnline = true
+//   return (
+//     <div>
+// {isOnline && 'Онлайн'}
+// {isOnline ? 'Онлайн' : 'Офлайн'}
+
+//map React
+// {[1, 2, 3, 4, 5].map(el => (
+//         <div>{el}</div>
+//       ))}
+
+

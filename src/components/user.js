@@ -1,4 +1,7 @@
-const User = ({imageUrl, name = 'не известно', tag, location, followers, views, likes} ) => {
+import PropTypes from 'prop-types'
+import defaulImage from './logo512.png'
+
+const User = ({ imageUrl = defaulImage, name = 'не известно', tag, location, followers, views, likes }) => {
   return (
   <div className="profile">
     <div className="description">
@@ -29,4 +32,25 @@ const User = ({imageUrl, name = 'не известно', tag, location, follower
   );
 };
 
+User.propTypes = {
+  imageUrl: PropTypes.string,
+  name: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number,
+}
+
+
+
+
 export default User;
+
+
+
+
+
+// тернарный оператор
+/* <span className="label">Likes {likes < 100 ? 'плохо' : 'хорошо'} </span> */
+
