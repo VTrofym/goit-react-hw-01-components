@@ -1,21 +1,11 @@
-import User from "./user"
+import UserList from "./userList";
+// import Section from './Section'
 import { usersData } from "./user_data";
 
 export default function App() {
   return (
     <div>
-      {usersData.map(user => (
-        <User
-        key={user.tag}
-        imageUrl={user.avatar}
-        name={user.username}
-        tag={user.tag}
-        location={user.location}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
-      />
-      ))}
+      <UserList items={ usersData} />
     </div>
   );
 }
@@ -43,4 +33,9 @@ export default function App() {
 //         <div>{el}</div>
 //       ))}
 
+// было для примера заголовков
+/* <Section title="Лучшее">
+        <UserList items={usersData} />
+</Section> */
+      
 
