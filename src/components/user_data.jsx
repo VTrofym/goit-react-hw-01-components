@@ -1,4 +1,4 @@
-export const data = {
+export const usersData = [{
   "username": "Jacques Gluke",
   "tag": "jgluke",
   "location": "Ocho Rios, Jamaica",
@@ -6,10 +6,21 @@ export const data = {
   "stats": {
     "followers": 5603,
     "views": 4827,
-    "likes": 1308
-  }
-}
-
+    "likes": 1308,
+  },
+},
+{
+  "username": "Jacq Gluk",
+  "tag": "jgl",
+  "location": "Ocho Rios, Jama",
+  "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+  "stats": {
+    "followers": 56,
+    "views": 48,
+    "likes": 13,
+  },
+},
+]
 
 
 
