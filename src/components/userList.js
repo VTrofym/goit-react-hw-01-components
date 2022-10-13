@@ -18,6 +18,7 @@ function UserList({ items }) {
   </ul>
 }
 
+
 UserList.propTypes = {
   items: PropTypes.arrayOf(PropTypes.shape({
     tag: PropTypes.string.isRequired,

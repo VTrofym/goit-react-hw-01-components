@@ -3,7 +3,7 @@ import defaulImage from './logo512.png'
 
 const User = ({ imageUrl = defaulImage, name = 'не известно', tag, location, followers, views, likes }) => {
   return (
-  <div className="profile">
+    <div className="profile">
     <div className="description">
       <img
         src={imageUrl}
