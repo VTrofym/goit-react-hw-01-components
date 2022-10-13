@@ -9,17 +9,17 @@ export const usersData = [{
     "likes": 1308,
   },
 },
-{
-  "username": "Jacq Gluk",
-  "tag": "jgl",
-  "location": "Ocho Rios, Jama",
-  "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-  "stats": {
-    "followers": 56,
-    "views": 48,
-    "likes": 13,
-  },
-},
+// {
+//   "username": "Jacq Gluk",
+//   "tag": "jgl",
+//   "location": "Ocho Rios, Jama",
+//   "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+//   "stats": {
+//     "followers": 56,
+//     "views": 48,
+//     "likes": 13,
+//   },
+// },
 ]
 
 
