@@ -1,34 +1,34 @@
-import PropTypes from 'prop-types'
-import defaulImage from '../logo512.png'
+import PropTypes from 'prop-types';
+import defaulImage from '../logo512.png';
+import { Profile, Description, Avatar, Name, Tag, Location, Stats, Block, Label,Quantity} from './User.styled';
 
 const User = ({ imageUrl = defaulImage, name = 'не известно', tag, location, followers, views, likes }) => {
   return (
-    <div className="profile">
-    <div className="description">
-      <img
+    <Profile>
+    <Description>
+      <Avatar
         src={imageUrl}
         alt="User avatar"
-        className="avatar"
       />
-      <p className="name">{name}</p>
-      <p className="tag">@{tag}</p>
-      <p className="location">{location}</p>
-    </div>
-    <ul className="stats">
-      <li className='block'>
-        <span className="label">Followers </span><br></br>
-        <span className="quantity">{followers}</span>
-      </li>
-      <li className='block'>
-        <span className="label">Views</span><br></br>
-        <span className="quantity">{views}</span>
-      </li>
-      <li className='block'>
-        <span className="label">Likes</span><br></br>
-        <span className="quantity">{likes}</span>
-      </li>
-    </ul>
-  </div>
+      <Name>{name}</Name>
+      <Tag>@{tag}</Tag>
+      <Location>{location}</Location>
+    </Description>
+    <Stats>
+      <Block>
+        <Label>Followers </Label><br></br>
+        <Quantity>{followers}</Quantity>
+      </Block>
+      <Block>
+        <Label>Views</Label><br></br>
+        <Quantity>{views}</Quantity>
+      </Block>
+      <Block>
+        <Label>Likes</Label><br></br>
+        <Quantity>{likes}</Quantity>
+      </Block>
+    </Stats>
+  </Profile>
   );
 };
 
