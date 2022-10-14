@@ -1,14 +1,17 @@
 import UserList from "./userList";
 import StatList from "./Statistics/StatList";
+import FriendList from "./Friends/FriendList";
 // import Section from './Section'
 import { usersData } from "./user_data";
 import statistics from '../dataJSON/statistics.json'
+import friends from '../dataJSON/friends.json'
 
 export default function App() {
   return (
     <div>
       <UserList items={usersData} />
       <StatList items={statistics} />
+      <FriendList items={friends} />
     </div>
   );
 }
