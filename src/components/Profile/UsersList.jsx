@@ -1,7 +1,7 @@
-import User from "./user";
+import User from "./User";
 import PropTypes from 'prop-types'
 
-function UserList({ items }) {
+function UsersList({ items }) {
   return <ul>
     {items.map(item =>(
       <li key={item.tag}>
@@ -19,11 +19,12 @@ function UserList({ items }) {
 }
 
 
-UserList.propTypes = {
+UsersList.propTypes = {
   items: PropTypes.arrayOf(PropTypes.shape({
     tag: PropTypes.string.isRequired,
   }))
 }
 
-export default UserList;
+export default UsersList;
+
 

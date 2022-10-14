@@ -1,4 +1,4 @@
-import UserList from "./userList";
+import UsersList from "./Profile/UsersList";
 import StatList from "./Statistics/StatList";
 import FriendList from "./Friends/FriendList";
 import TransactionList from "./Transactions/TransactionList";
@@ -11,7 +11,7 @@ import transaction from '../dataJSON/transaction.json';
 export default function App() {
   return (
     <div>
-      <UserList items={users} />
+      <UsersList items={users} />
       <StatList items={statistics} />
       <FriendList items={friends} />
       <TransactionList items={transaction} />

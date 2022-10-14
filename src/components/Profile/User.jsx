@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import defaulImage from './logo512.png'
+import defaulImage from '../logo512.png'
 
 const User = ({ imageUrl = defaulImage, name = 'не известно', tag, location, followers, views, likes }) => {
   return (
@@ -48,7 +48,7 @@ export default User;
 
 
 
-
 // тернарный оператор
 /* <span className="label">Likes {likes < 100 ? 'плохо' : 'хорошо'} </span> */
+
 
