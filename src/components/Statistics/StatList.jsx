@@ -1,6 +1,7 @@
 import CreatePage from './CreatePage';
 import PropTypes from 'prop-types'
 
+
 function StatList({items}) {
   return <ul>
     {items.map(item => (

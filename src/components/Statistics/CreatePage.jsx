@@ -7,8 +7,8 @@ const CreatePage = ({id, label, percentage}) => {
     <h2 className="title">Upload stats</h2>
     <ul className="stat-list">
         <li className="item">{id}
-          <span className="label">{ label}</span>
-          <span className="percentage">{ percentage}</span>
+          <span className="label">{label}</span>
+          <span className="percentage">{percentage}</span>
       </li>
     </ul>
   </section>

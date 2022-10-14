@@ -48,6 +48,7 @@ export default User;
 
 
 
+
 // тернарный оператор
 /* <span className="label">Likes {likes < 100 ? 'плохо' : 'хорошо'} </span> */
 
