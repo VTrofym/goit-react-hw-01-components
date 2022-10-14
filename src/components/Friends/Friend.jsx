@@ -5,7 +5,7 @@ const Friend = ({avatar, name, isOnline}) => {
   return (
     <Item>
       <Status>{isOnline}</Status>
-  <Avatar src={avatar} alt="User avatar" width="48" />
+  <Avatar src={avatar} alt="User avatar" width="80" />
       <Name>{name}</Name>
 </Item>
   );

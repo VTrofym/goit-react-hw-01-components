@@ -63,5 +63,5 @@ code {
 }
 
 .test{
-  background-color: beige;
+  display: flex;
 }

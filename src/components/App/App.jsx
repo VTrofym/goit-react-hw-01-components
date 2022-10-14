@@ -8,14 +8,16 @@ import statistics from '../../dataJSON/statistics.json';
 import friends from '../../dataJSON/friends.json';
 import transaction from '../../dataJSON/transaction.json';
 
+import { Container } from "./App.styled";
+
 export default function App() {
   return (
-    <div>
+    <Container>
       <UsersList items={users} />
       <StatList items={statistics} />
       <FriendList items={friends} />
       <TransactionList items={transaction} />
-    </div>
+    </Container>
   );
 }
 

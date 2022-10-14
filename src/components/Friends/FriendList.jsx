@@ -1,9 +1,9 @@
 import Friend from "./Friend";
 import PropTypes from 'prop-types'
-import { Block} from './FriendList.styled';
+import {Father, Block} from './FriendList.styled';
 
 function FriendList({ items }) {
-  return <ul>
+  return <Father>
     {items.map(item =>(
       <Block key={item.id}>
       <Friend
@@ -12,7 +12,7 @@ function FriendList({ items }) {
         isOnline={item.isOnline}
       />
     </Block>))}
-  </ul>
+  </Father>
 }
 
 Friend.propTypes = {
@@ -22,3 +22,4 @@ Friend.propTypes = {
 }
 
 export default FriendList;
+
