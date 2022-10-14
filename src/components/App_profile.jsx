@@ -1,10 +1,12 @@
 import UserList from "./userList";
 import StatList from "./Statistics/StatList";
 import FriendList from "./Friends/FriendList";
-// import Section from './Section'
+import TransactionList from "./Transactions/TransactionList";
+
 import { usersData } from "./user_data";
 import statistics from '../dataJSON/statistics.json'
 import friends from '../dataJSON/friends.json'
+import transaction from '../dataJSON/transaction.json'
 
 export default function App() {
   return (
@@ -12,6 +14,7 @@ export default function App() {
       <UserList items={usersData} />
       <StatList items={statistics} />
       <FriendList items={friends} />
+      <TransactionList items={transaction} />
     </div>
   );
 }
