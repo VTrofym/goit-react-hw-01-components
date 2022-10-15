@@ -4,7 +4,7 @@ export const Profile = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
-  max-width: 450px;
+  width: 100%;
   background-color: rgb(103, 241, 197)
   `;
 
@@ -51,7 +51,7 @@ export const Stats = styled.ul`
   `;
 
 export const Block = styled.li`
-  width: 150px;
+  width: 1000px;
   list-style-type: none;
   border: 1px solid rgba(12, 8, 241, 0.3);
   `;

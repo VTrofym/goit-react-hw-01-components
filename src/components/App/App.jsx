@@ -1,7 +1,7 @@
 import UsersList from "../Profile/UsersList";
 import StatList from "../Statistics/StatList";
 import FriendList from "../Friends/FriendList";
-import TransactionList from "../Transactions/TransactionList";
+import Transaction from "../Transactions/Transaction";
 
 import users from '../../dataJSON/users.json';
 import statistics from '../../dataJSON/statistics.json';
@@ -16,7 +16,7 @@ export default function App() {
       <UsersList items={users} />
       <StatList items={statistics} />
       <FriendList items={friends} />
-      <TransactionList items={transaction} />
+      <Transaction items={transaction} />
     </Container>
   );
 }
