@@ -1,5 +1,5 @@
 import UsersList from "../Profile/UsersList";
-import StatList from "../Statistics/StatList";
+import Statistics from "components/Statistics/Statistics";
 import FriendList from "../Friends/FriendList";
 import Transaction from "../Transactions/Transaction";
 
@@ -14,7 +14,7 @@ export default function App() {
   return (
     <Container>
       <UsersList items={users} />
-      <StatList items={statistics} />
+      <Statistics items={statistics} title="Upload stats" />
       <FriendList items={friends} />
       <Transaction items={transaction} />
     </Container>

@@ -1,24 +1,27 @@
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
-const Statistics  = ({ id, label, percentage }) => {
+const Statistics = ({ items, title }) => {
   return (
-  <section className="statistics">
-    <h2 className="title">Upload stats</h2>
-    <ul className="stat-list">
-        <li className="item">{id}
-          <span className="label">{label}</span>
-          <span className="percentage">{percentage}</span>
-      </li>
-    </ul>
-  </section>
+    <section class="statistics">
+      {title ? <h2 class="title">{title}</h2> : false}
+      <ul class="stat-list">
+        {items.map(item => {
+          return (
+            <li class="item" key={item.id}>
+              <span class="label">{item.label}</span>
+              <span class="percentage">{item.percentage}</span>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
   );
 };
 
-Statistics.propTypes = {
-  id: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired
-}
+// Statistics.propTypes = {
+//   id: PropTypes.string.isRequired,
+//   label: PropTypes.string.isRequired,
+//   percentage: PropTypes.number.isRequired
+// }
 
 export default Statistics;
-
