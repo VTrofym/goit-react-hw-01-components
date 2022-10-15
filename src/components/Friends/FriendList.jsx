@@ -11,7 +11,8 @@ function FriendList({ items }) {
         name={item.name}
         isOnline={item.isOnline}
       />
-    </Block>))}
+      </Block>
+    ))}
   </Father>
 }
 

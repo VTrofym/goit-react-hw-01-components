@@ -6,6 +6,7 @@ export const Item = styled.li`
   margin-right: auto;
   background-color: beige;
   display: flex;
+  align-items: center;
   `;
 
 export const Status = styled.span`
@@ -14,7 +15,7 @@ export const Status = styled.span`
   width: 25px;
   height: 25px;
   display: inline-block;
-  background-color: green;
+  background-color: ${showStatus};
   `;
 
 export const Avatar = styled.img`
@@ -27,3 +28,6 @@ export const Name = styled.p`
   font-size: 28px;
   `;
 
+function showStatus(p) {
+  return p.isOnline ? 'green' : 'red'
+};
