@@ -7,7 +7,7 @@ export const Item = styled.li`
   background-color: beige;
   display: flex;
   align-items: center;
-  `;
+`;
 
 export const Status = styled.span`
   background-color: #fff;
@@ -16,18 +16,16 @@ export const Status = styled.span`
   height: 25px;
   display: inline-block;
   background-color: ${showStatus};
-  `;
+`;
 
-export const Avatar = styled.img`
-  
-  `;
+export const Avatar = styled.img``;
 
 export const Name = styled.p`
   margin-left: 20px;
   font-weight: 400;
   font-size: 28px;
-  `;
+`;
 
 function showStatus(p) {
-  return p.isOnline ? 'green' : 'red'
-};
+  return p.isOnline ? 'green' : 'red';
+}

@@ -1,14 +1,14 @@
-import UsersList from "../Profile/UsersList";
-import Statistics from "components/Statistics/Statistics";
-import FriendList from "../Friends/FriendList";
-import Transaction from "../Transactions/Transaction";
+import UsersList from '../Profile/UsersList';
+import Statistics from 'components/Statistics/Statistics';
+import FriendList from '../Friends/FriendList';
+import Transaction from '../Transactions/Transaction';
 
 import users from '../../dataJSON/users.json';
 import statistics from '../../dataJSON/statistics.json';
 import friends from '../../dataJSON/friends.json';
 import transaction from '../../dataJSON/transaction.json';
 
-import { Container } from "./App.styled";
+import { Container } from './App.styled';
 
 export default function App() {
   return (
@@ -20,15 +20,6 @@ export default function App() {
     </Container>
   );
 }
-
-
-
-
-
-
-
-
-
 
 // использование логического И и тернарника
 // const isOnline = true
@@ -46,5 +37,3 @@ export default function App() {
 /* <Section title="Лучшее">
         <UserList items={usersData} />
 </Section> */
-      
-

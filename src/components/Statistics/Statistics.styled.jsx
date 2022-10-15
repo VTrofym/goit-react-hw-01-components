@@ -1,51 +1,51 @@
 import styled from '@emotion/styled';
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
-
 export const Section = styled.section`
-  width: 380px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
-  background-color: ${props => `${props.theme.colors.bgColor}`};
-  border-radius: 20px;
-  padding-top: 10px;
+  padding-top: 50px;
+  max-width: 450px;
+  background-color: rgb(216, 232, 227);
 `;
 
 export const Title = styled.h2`
+  margin: 0px 0px 50px 0px;
   text-align: center;
-  line-height: 20px;
-  margin: 0;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1;
 `;
 
-export const List = styled.ul`
+export const StatList = styled.ul`
+  list-style-type: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
-  margin-top: 40px;
+  padding: 0;
 `;
 
 export const Item = styled.li`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  gap: 5px;
-  width: 65px;
-  height: 60px;
-  border-radius: 5px;
-  background-color: ${props => `${getRandomHexColor(props)}`};
+  width: 450px;
+  height: 100px;
+  padding-top: 15px;
+  border: 1px solid rgba(9, 5, 237, 0.861);
+  background-color: ${props => getRandomHexColor()};
 `;
-
 export const Label = styled.span`
-  color: ${props => `${props.theme.colors.primaryColor}`};
+  padding: 0;
+  margin-bottom: 20px;
+  letter-spacing: normal;
+  color: aliceblue;
+  display: block;
+  text-align: center;
 `;
 
 export const Percentage = styled.span`
-  color: ${props => `${props.theme.colors.primaryColor}`};
-  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
+  color: aliceblue;
 `;
+
+function getRandomHexColor() {
+  return `#${Math.round(Math.random() * 10000)}`;
+}

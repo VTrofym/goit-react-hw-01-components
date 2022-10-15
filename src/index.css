@@ -17,52 +17,7 @@ code {
 }
 
 /* cлизизация для второго таска */
-.statistics {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 50px;
-  max-width: 450px;
-  background-color: rgb(216, 232, 227);
-}
 
-.title{
-  margin: 0px 0px 50px 0px ;
-  text-align: center;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 1;
-}
 
-.stat-list{
-  list-style-type: none;
-  display: flex;
-  padding: 0;
-}
 
-.item{
-  width: 450px;
-  height: 100px;
-  padding-top: 15px;
-  border: 1px solid rgba(9, 5, 237, 0.861);
-  background-color: rgb(136, 90, 174);
-}
-
-.label{
-  padding: 0;
-  margin-bottom: 20px;
-  letter-spacing: normal;
-  color: aliceblue;
-}
-
-.percentage{
-  display: block;
-  text-align: center;
-  font-weight: 400;
-  font-size: 28px;
-  color: aliceblue;
-}
-
-.test{
-  display: flex;
-}
 
