@@ -1,4 +1,4 @@
-import CreatePage from './CreatePage';
+import Statistics from './Statistics';
 import PropTypes from 'prop-types'
 
 
@@ -6,7 +6,7 @@ function StatList({items}) {
   return <ul>
     {items.map(item => (
     <li key={item.id}>
-      <CreatePage
+      <Statistics
       id={item.id}
       label={item.label}
       percentage={item.percentage}

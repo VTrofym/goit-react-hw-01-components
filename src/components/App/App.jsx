@@ -30,7 +30,6 @@ export default function App() {
 
 
 
-
 // использование логического И и тернарника
 // const isOnline = true
 //   return (

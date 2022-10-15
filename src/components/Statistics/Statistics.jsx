@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
-// import css from './Statistics.module.css'
 
-const CreatePage = ({id, label, percentage}) => {
+const Statistics  = ({ id, label, percentage }) => {
   return (
   <section className="statistics">
     <h2 className="title">Upload stats</h2>
@@ -15,11 +14,11 @@ const CreatePage = ({id, label, percentage}) => {
   );
 };
 
-CreatePage.propTypes = {
+Statistics.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired
 }
 
-export default CreatePage;
+export default Statistics;
 
