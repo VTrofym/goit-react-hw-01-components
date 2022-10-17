@@ -1,9 +1,10 @@
 import User from './User';
 import PropTypes from 'prop-types';
+import { UserContainers } from './UserList.styled';
 
 function UsersList({ items }) {
   return (
-    <ul>
+    <UserContainers>
       {items.map(item => (
         <li key={item.tag}>
           <User
@@ -17,7 +18,7 @@ function UsersList({ items }) {
           />
         </li>
       ))}
-    </ul>
+    </UserContainers>
   );
 }
 
@@ -30,3 +31,4 @@ UsersList.propTypes = {
 };
 
 export default UsersList;
+

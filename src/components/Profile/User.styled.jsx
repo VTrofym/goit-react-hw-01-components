@@ -48,6 +48,7 @@ export const Stats = styled.ul`
   display: flex;
   padding: 0px;
   margin: 0;
+  list-style: none;
 `;
 
 export const Block = styled.li`
