@@ -11,6 +11,7 @@ const Friend = ({ avatar, name, isOnline }) => {
   );
 };
 
+
 Friend.propTypes = {
   isOnline: PropTypes.bool.isRequired,
   avatar: PropTypes.string.isRequired,
@@ -18,3 +19,4 @@ Friend.propTypes = {
 };
 
 export default Friend;
+

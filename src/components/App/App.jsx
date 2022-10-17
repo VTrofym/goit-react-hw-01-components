@@ -3,10 +3,10 @@ import Statistics from 'components/Statistics/Statistics';
 import FriendList from '../Friends/FriendList';
 import Transaction from '../Transactions/Transaction';
 
-import users from '../../dataJSON/users.json';
-import statistics from '../../dataJSON/statistics.json';
-import friends from '../../dataJSON/friends.json';
-import transaction from '../../dataJSON/transaction.json';
+import users from '../../dataJSON/users';
+import statistics from '../../dataJSON/statistics';
+import friends from '../../dataJSON/friends';
+import transaction from '../../dataJSON/transaction';
 
 import { Container } from './App.styled';
 
@@ -20,6 +20,9 @@ export default function App() {
     </Container>
   );
 }
+
+
+
 
 // использование логического И и тернарника
 // const isOnline = true
